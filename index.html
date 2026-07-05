@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harley's MathCraft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Harley's MathCraft Calculator</h1>
+
+  <div id="display">Build your equation...</div>
+
+  <div class="buttons">
+    <button onclick="addSymbol('1')">1</button>
+    <button onclick="addSymbol('2')">2</button>
+    <button onclick="addSymbol('3')">3</button>
+    <button onclick="addSymbol('+')">+</button>
+
+    <button onclick="addSymbol('4')">4</button>
+    <button onclick="addSymbol('5')">5</button>
+    <button onclick="addSymbol('6')">6</button>
+    <button onclick="addSymbol('-')">−</button>
+
+    <button onclick="addSymbol('7')">7</button>
+    <button onclick="addSymbol('8')">8</button>
+    <button onclick="addSymbol('9')">9</button>
+    <button onclick="addSymbol('×')">×</button>
+
+  <button onclick="addSymbol('0')">0</button>
+<button onclick="addSymbol('÷')">÷</button>
+<button onclick="addSymbol('√')">√</button>
+<button onclick="clearEquation()">Clear</button>
+<button onclick="addSymbol('(')">(</button>
+<button onclick="addSymbol(')')">)</button>
+<button onclick="buildEquation()" class="wide-button">Build Equation</button>
+  </div>
+
+  <h2>Equation Blocks</h2>
+  <div id="equationBlocks"></div>
+
+  <h2>Inventory</h2>
+<div id="inventory"></div>
+
+<h2>Crafting Table</h2>
+<p>Click inventory items to place them into the crafting table.</p>
+
+<div id="craftingSlots">
+  <div class="craft-slot" id="slot0"></div>
+  <div class="craft-slot" id="slot1"></div>
+</div>
+
+<button onclick="craftItem()" class="craft-button">Craft</button>
+<button onclick="clearCrafting()" class="craft-button">Clear Crafting</button>
+
+<h2>Crafted Items</h2>
+<p>Click crafted items to use them.</p>
+<div id="craftedItems"></div>
+
+<h2>Math Points</h2>
+<div id="pointsDisplay">Points: 0</div>
+
+<h2 id="advancedTitle" style="display: none;">Advanced Math Panel</h2>
+<div id="advancedPanel" style="display: none;">
+  <button onclick="addSymbol('π')">π</button>
+  <button onclick="addSymbol('∞')">∞</button>
+  <button onclick="addSymbol('^')">Power ^</button>
+  <button onclick="addSymbol('.')">Decimal .</button>
+  <button onclick="addSymbol('/')">Fraction /</button>
+</div>
+
+<h2 id="secretTitle" style="display: none;">Secret Equation Panel</h2>
+<div id="secretPanel" style="display: none;">
+  <p>You unlocked secret equation pieces.</p>
+  <button onclick="addSymbol('Δ')">Delta Δ</button>
+  <button onclick="addSymbol('θ')">Theta θ</button>
+  <button onclick="addSymbol('Σ')">Sigma Σ</button>
+  <button onclick="addSymbol('Ω')">Omega Ω</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
